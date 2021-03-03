@@ -1,0 +1,14 @@
+name: Changetobedrock
+version: ${project.version}
+main: net.kunmc.lab.changetobedrock.Changetobedrock
+api-version: 1.15
+
+commands:
+  changetobedrock:
+    usage: /changetobedrock <on/off/range> <range value>
+    description: Bedrock Plugin
+    permission: changetobedrock
+
+permissions:
+  changetobedrock:
+    default: op
