@@ -56,7 +56,9 @@ public final class Changetobedrock extends JavaPlugin implements Listener {
             isBlock = true;
             break;
         }
-        if(isBlock) lastBlock.setType(Material.BEDROCK);
+        if(isBlock)
+            if (player.getScoreboardTags().contains("bedrock"))
+                lastBlock.setType(Material.BEDROCK);
     }
 
     @Override
